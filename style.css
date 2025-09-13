@@ -157,7 +157,7 @@ img {
 
 /* :: 3.4.0 Preloader */
 .preloader {
-  background-color:white;
+  background-color:orange;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -183,7 +183,7 @@ img {
     left: 58%;
     width: 2.5vh;
     height: 2.5vh;
-    background-color:green;
+    background-color:white;
     animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite; }
   #cooking .bubble:nth-child(2) {
     margin-top: 3vh;
@@ -204,7 +204,7 @@ img {
     left: 56%;
     width: 1.2vh;
     height: 1.2vh;
-    background-color: green;
+    background-color: white;
     animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.9s infinite; }
   #cooking .bubble:nth-child(5) {
     margin-top: 2.7vh;
@@ -2720,7 +2720,7 @@ position:relative;
   bottom: 95px;
   left: 50%;
   transform: translateX(-50%);
-  color: green;
+  color: orange;
   animation: upDown 3s infinite ease-in-out; /* ⬅️ أنيميشن */
 }
 
@@ -3224,13 +3224,14 @@ color: white;
   width: 100%;
   max-height: 50vh; /* مايفوتش نصف الشاشة */
   overflow: hidden;
-  margin-top:5px;
-  margin: 70px auto 20px;
+  margin-top:10px;
+  margin: 73px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   position :relative;
   bottom:8px;
+  background :black;
 }
 
 .slides {
