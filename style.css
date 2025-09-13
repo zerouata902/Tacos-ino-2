@@ -522,7 +522,7 @@ img {
   
   position: relative; 
   border-radius: 12px;
-  box-shadow: 0 3px 8px green;
+  box-shadow: 0 3px 8px orange;
   transition: transform 0.3s ease;
   z-index: 1000;
 }
@@ -1936,7 +1936,7 @@ h3{
    font-size:28px;
    color :black;
      text-transform: uppercase; 
-       background: linear-gradient(70deg,green,black, green);
+       background: linear-gradient(70deg,orange,black, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
      
@@ -3364,8 +3364,8 @@ color: white;
 }
 
 .dropdown-content span:hover {
-  background-color:black;
-  color:green;
+  background-color:orange;
+  color:black;
 }
 
 /* اظهار dropdown عند الضغط */
