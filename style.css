@@ -3230,9 +3230,9 @@ color: white;
   justify-content: center;
   align-items: center;
   position :relative;
-  bottom:12px;
+  bottom:14px;
   background :white;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 10px black ;
 }
 
 .slides {
