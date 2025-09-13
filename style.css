@@ -2031,8 +2031,8 @@ h3{
 
 /* الزر عادي، صغيور وأنيق */
 .order-btn {
-  background:green;
-  color: white;
+  background:orange;
+  color: black;
   border: none;
   padding: 8px 16px;
   font-weight:bold;
@@ -2112,8 +2112,8 @@ h3{
   gap: 5px;
 }
 .cart-item button {
-  background: green;
-  color: white;
+  background: orange;
+  color: black;
   border: none;
   padding: 5px 8px;
   border-radius: 5px;
@@ -2152,8 +2152,8 @@ h3{
 .order-button {
   display: block;
   width: 100%;
-  background:green;
-  color: white;
+  background:orange;
+  color: black;
   border: none;
   padding: 14px 20px;
   border-radius: 10px;
@@ -2598,12 +2598,12 @@ body {
 .category-buttons button {
   flex: 0 0 auto;
   background: linear-gradient(to right, 
-    green 0%, 
-    green 5%, 
-    white 5%, 
-    white 10%,
-    red 10%, 
-    red 10%,  
+    orange 0%, 
+    orange 5%, 
+    orange 5%, 
+    orange 10%,
+    orange 10%, 
+    orange 10%,  
     black 15%, 
     black 100%);
   color: white;
@@ -2864,8 +2864,8 @@ position:relative;
 /* زر إضافة */
 #modalAddToCart {
 font-family: 'Amiri', serif;
-  background: green;
-  color: white;
+  background: orange;
+  color: black;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
