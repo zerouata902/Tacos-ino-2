@@ -3222,10 +3222,10 @@ color: white;
 
 .slider {
   width: 100%;
-  max-height: 50vh; /* مايفوتش نصف الشاشة */
+  max-height: 55vh; /* مايفوتش نصف الشاشة */
   overflow: hidden;
-  
-  margin: 73px auto 20px;
+  margin-top:5px;
+  margin: 70px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3242,9 +3242,9 @@ color: white;
   flex: 0 0 100%;
   width: 100%;
   height: auto;          /* خليها تتأقلم */
-  max-height: 50vh;      /* باش ماتخنقش فالتليفون */
+  max-height: 55vh;      /* باش ماتخنقش فالتليفون */
   object-fit: contain;   /* الصورة كاملة */
-  background: white;
+  background :black;
   padding: 5px;
 }
 
@@ -3415,24 +3415,25 @@ color: white;
   width: 25px;
   height: 25px;
   background-color:black ;
-  color: white;
+  color: orange;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  
+  bottom:10px;
   transition: 0.3s;
   z-index:1;
   position :relative;
 }
 
 .control:hover {
-  background-color: green;
+  background-color: orange;
+  color :black;
 }
 .control.active {
-  background-color: green; /* اللون الأحمر */
-  color: white;
+  background-color: orange; /* اللون الأحمر */
+  color: black;
 }
 
 
