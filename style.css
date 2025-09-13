@@ -3232,7 +3232,7 @@ color: white;
   position :relative;
   bottom:16px;
   background :white;
-  box-shadow: 0 4px 8px black ;
+  box-shadow: 0 2px 3px black ;
 }
 
 .slides {
