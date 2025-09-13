@@ -1860,6 +1860,11 @@
 
 
 
+<!-- ملف الصوت -->
+<audio id="clickSound" preload="auto">
+  <source src="cash.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -2000,6 +2005,16 @@ document.addEventListener('click', () => {
   document.querySelectorAll('.description-box').forEach(box => box.classList.remove('show'));
 });
   </script>
+			<script>
+  const button = document.getElementById('modalAddToCart');
+  const sound = document.getElementById('clickSound');
+
+  button.addEventListener('click', () => {
+    // إعادة تعيين الوقت للصوت من البداية قبل التشغيل
+    sound.currentTime = 0;
+    sound.play().catch(err => console.log("Autoplay prevented:", err));
+  });
+			</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- jQuery-2.2.4 js -->
