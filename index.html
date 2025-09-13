@@ -1932,7 +1932,26 @@ document.addEventListener("DOMContentLoaded", function() {
     alert("Language switched to: " + lang);
   }
   </script>
+  <script>
+document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+  arrow.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const box = arrow.nextElementSibling;
 
+    // اخفاء جميع البوكسات الأخرى
+    document.querySelectorAll('.description-box').forEach(b => {
+      if(b !== box) b.classList.remove('show');
+    });
+
+    box.classList.toggle('show');
+  });
+});
+
+// الضغط في أي مكان آخر يخفي جميع الـ boxes
+document.addEventListener('click', () => {
+  document.querySelectorAll('.description-box').forEach(box => box.classList.remove('show'));
+});
+  </script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- jQuery-2.2.4 js -->
