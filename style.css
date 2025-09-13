@@ -3229,6 +3229,8 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position :relative;
+  bottom:7px;
 }
 
 .slides {
