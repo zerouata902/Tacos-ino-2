@@ -3224,15 +3224,15 @@ color: white;
   width: 100%;
   max-height: 55vh; /* مايفوتش نصف الشاشة */
   overflow: hidden;
-  margin-top:10px;
-  margin: 70px auto 20px;
+  margin-bottom:20px;
+  margin: 73px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   position :relative;
-  bottom:10px;
+  bottom:12px;
   background :white;
-    box-shadow: 0 10px 15px black;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 .slides {
@@ -3409,7 +3409,7 @@ color: white;
   gap: 10px;
   margin-top: 10px;
   position :relative;
-  bottom:20px;
+  bottom:18px;
 
   
 }
