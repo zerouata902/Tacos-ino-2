@@ -2237,8 +2237,8 @@ h3{
 
 .image-box {
   margin-top: 25px;
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 390px;
   display: flex;              /* ✅ */
   justify-content: center;    /* ✅ أفقي */
   align-items: center;        /* ✅ عمودي */
@@ -2263,8 +2263,8 @@ h3{
 
 .image-box2 {
   margin-top: 25px;
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   display: flex;              /* ✅ */
   justify-content: center;    /* ✅ أفقي */
   align-items: center;        /* ✅ عمودي */
