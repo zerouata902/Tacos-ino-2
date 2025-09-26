@@ -3263,11 +3263,11 @@ color: white;
 .small-slides {
   display: flex;
   justify-content: center; /* يدير الصور للوسط */
-  width: 300%; /* عندك 6 صور */
+  width: 250%; /* عندك 6 صور */
 }
 
 .small-slides img {
-    width: calc(100% / 9 - 10px);
+    width: calc(100% / 6 - 10px);
   flex-shrink: 0;
   margin: 0 5px;
   
