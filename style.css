@@ -3271,11 +3271,11 @@ color: white;
 .small-slides {
   display: flex;
   justify-content: center; /* يدير الصور للوسط */
-  width: 200%; /* عندك 6 صور */
+  width: 150%; /* عندك 6 صور */
 }
 
 .small-slides img {
-    width: calc(100% / 6 - 20px);
+    width: calc(100% / 5 - 15px);
   flex-shrink: 0;
   margin: 0 5px;
   
