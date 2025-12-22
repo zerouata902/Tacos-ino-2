@@ -3259,6 +3259,14 @@ color: white;
   bottom: 15px;
   margin: 0 auto;   /* باش يجي فالنص */
 }
+.small-slider {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+  bottom: 15px;
+  margin: 0 auto;   /* باش يجي فالنص */
+}
 
 .small-slides {
   display: flex;
@@ -3271,7 +3279,7 @@ color: white;
   flex-shrink: 0;
   margin: 0 5px;
   
-}
+  }
 
 /* 📱 الهاتف */
 @media (max-width: 480px) {
