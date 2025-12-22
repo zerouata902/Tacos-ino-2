@@ -3275,7 +3275,7 @@ color: white;
 }
 
 .small-slides img {
-    width: calc(100% / 5 - 15px);
+    width: calc(100% / 4 - 15px);
   flex-shrink: 0;
   margin: 0 5px;
   
