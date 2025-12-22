@@ -153,7 +153,7 @@ function hidePreloader(duration = 3000) {
 
   // تنادي على الفنكسيون بعد ما تحمل الصفحة
   window.addEventListener("load", () => {
-    hidePreloader(1000); // تقدر تبدل الرقم
+    hidePreloader(300); // تقدر تبدل الرقم
   });
 
 
