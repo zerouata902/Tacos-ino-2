@@ -1936,7 +1936,7 @@ h3{
    font-size:28px;
    color :white;
      text-transform: uppercase; 
-       background: linear-gradient(70deg,orange,rgb(252, 250, 250), orange);
+       background: linear-gradient(70deg,orange,white, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
      
