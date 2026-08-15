@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+
+    <!-- Title -->
+    <title>Snack tacos ino</title>
+<meta name="description" content="Tacos ino يقدم لك أشهى المأكولات السريعة بجودة عالية وتوصيل سريع">
+  <meta property="og:image" content="https://www.snacktacosino.com/images/Logotime.png" />
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+    <!-- Favicon -->
+    <link rel="icon" href="images/Logotime.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      
+                        
+
+
+       <header class="main-header">
+  <!-- اليمين: اللوغو -->
+  <div class="right-section">
+    <img src="images/Logotime.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- 🆕 مجموعة الأيقونات: اللغة + السلة + التوغلر -->
+  <div class="header-icons">
+
+    <!-- 🆕 أيقونة اللغة الخاصة (بدل الدروبداون اللي كان فالوسط) -->
+    <div class="lang-btn-wrap dropdown">
+      <button class="lang-btn dropbtn" aria-label="اللغة">
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      <div class="dropdown-content lang-dropdown-content">
+        <span onclick="switchLang('fr')">🇫🇷 Français</span>
+        <span onclick="switchLang('ar')">🇸🇦 الـعربـيـة</span>
+      </div>
+    </div>
+
+    <!-- أيقونة السلة الاحترافية فالهيدر -->
+    <div class="header-cart-btn" id="header-cart-btn" onclick="goToCartPage()">
+      <i class="fa fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+    <!-- الهامبرغر أيقونة الاحترافية -->
+    <div id="toggler" aria-label="القائمة">
+      <i class="fa-solid fa-bars-staggered" id="togglerIcon"></i>
+    </div>
+
+  </div>
+
+	   </header>
+
+
+
+                        <div class="top-social-info">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="12:00AM-6:00PM"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tacos ino"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tacos ino"><i class="fa fa-instagram"aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+212 687902690"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Chouhada aït melloul"><i class="fa fa-map-marker"                        aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="tacosino.com"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                        </div>
+
+
+
+
+                 
+  
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+  <div class="treading-post-area" id="treadingPost">
+    <div class="close-icon">
+        <i class="fa fa-times"></i>
+    </div>
+
+    <div class="sidebar-header">
+      <span class="sidebar-header-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+      <h4>
+        <span data-fr="Menu" data-ar="القائمة">Menu</span>
+        <small data-fr="Naviguez facilement" data-ar="تصفح بسهولة">Naviguez facilement</small>
+      </h4>
+    </div>
+
+    <!-- Sidebar Menu Pro -->
+    <div class="sidebar-menu">
+
+        <a href="#" class="sidebar-menu-item" onclick="goToMenuSection(event)">
+            <span class="sidebar-menu-icon"><i class="fa-solid fa-utensils"></i></span>
+            <span class="sidebar-menu-text">
+                <span class="sidebar-menu-title" data-fr="Notre Menu" data-ar="المنيو ديالنا">Notre Menu</span>
+                <span class="sidebar-menu-sub" data-fr="Découvrez tous nos plats" data-ar="اكتشف جميع أطباقنا">Découvrez tous nos plats</span>
+            </span>
+            <span class="sidebar-menu-arrow"><i class="fa-solid fa-chevron-left"></i></span>
+        </a>
+
+        <a href="tel:+212687902690" class="sidebar-menu-item">
+            <span class="sidebar-menu-icon"><i class="fa-solid fa-phone-volume"></i></span>
+            <span class="sidebar-menu-text">
+                <span class="sidebar-menu-title" data-fr="Appelez-nous" data-ar="اتصل بنا">Appelez-nous</span>
+                <span class="sidebar-menu-sub" data-fr="+212 687 902 690" data-ar="212 687 902 690+">+212 687 902 690</span>
+            </span>
+            <span class="sidebar-menu-arrow"><i class="fa-solid fa-chevron-left"></i></span>
+        </a>
+
+        <a href="#" class="sidebar-menu-item" onclick="openLoginModal(event)">
+            <span class="sidebar-menu-icon"><i class="fa-solid fa-user"></i></span>
+            <span class="sidebar-menu-text">
+                <span class="sidebar-menu-title" data-fr="Connexion / Inscription" data-ar="تسجيل الدخول / اشتراك">Connexion / Inscription</span>
+                <span class="sidebar-menu-sub" data-fr="Accédez à votre compte" data-ar="ادخل لحسابك">Accédez à votre compte</span>
+            </span>
+            <span class="sidebar-menu-arrow"><i class="fa-solid fa-chevron-left"></i></span>
+        </a>
+
+    </div>
+</div>
+
+<!-- Login / Register Modal -->
+<div id="loginModal" class="login-modal-overlay">
+  <div class="login-modal">
+    <i class="fa fa-times login-modal-close" onclick="closeLoginModal()"></i>
+    <div class="login-modal-icon"><i class="fa-solid fa-user-lock"></i></div>
+    <h4 data-fr="Connexion / Inscription" data-ar="تسجيل الدخول / اشتراك">Connexion / Inscription</h4>
+    <p data-fr="Cette fonctionnalité arrive très bientôt. En attendant, contactez-nous directement." data-ar="هاد الخدمة غادي توصل قريباً. فهاد الوقت، توصل بينا مباشرة.">هاد الخدمة غادي توصل قريباً. فهاد الوقت، توصل بينا مباشرة.</p>
+    <a href="https://wa.me/212687902690" target="_blank" class="login-modal-btn">
+      <i class="fa fa-whatsapp"></i>
+      <span data-fr="Contactez-nous" data-ar="تواصل معانا">تواصل معانا</span>
+    </a>
+  </div>
+</div>
+        </div>
+
+
+        
+        </div>
+    </div>
+    
+             
+  
+                    
+                 
+            </div>    
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Treading Post Area Start ##### -->
+
+
+  <!-- الصورة الكبيرة -->
+  <div class="slider">
+    <div class="slides">
+ 
+
+      <img src="images/H1.png" alt="Plat 2">
+      <img src="images/Q44.png" alt="Plat 2">
+      <img src="images/QA.png" alt="Plat 3">
+    </div>
+  </div>
+
+  <div class="controls">
+  <div class="control active" data-index="0">1</div>
+  <div class="control" data-index="1">2</div>
+  <div class="control" data-index="2">3</div>
+</div>
+  <!-- الصور الصغار -->
+  <div class="small-slider">
+    <div class="small-slides">
+      <img src="images/U.jpg" alt="Small 1">
+      <img src="images/U2.jpg" alt="Small 2">
+    </div>
+    
+  </div>
+
+
+
+<div class="action-box">
+  <h2>Découvrez notre menu et commandez</h2>
+	   <div class="hero-text-arabic">
+  <span id="arabic-text"></span>
+	   </div>
+</div>
+   
+ 
+
+ 
+
+
+<div class="category-buttons-container" id="categoryMenu">
+  <div class="category-buttons">
+   <button onclick="showCategory('Burger')" data-fr="Burger" data-ar="برݣر">Burger</button>
+    <button onclick="showCategory('chika')" data-fr="Chika" data-ar="شيكا">Chika</button>
+    <button onclick="showCategory('sandwich')" data-fr="Sandwich" data-ar="سندويتش">Sandwich</button>
+    <button onclick="showCategory('chawarma')" data-fr="chawarma" data-ar="شورما">Chawarma</button>
+    <button onclick="showCategory('panini')" data-fr="panini" data-ar="پانيني">Panini</button>
+        <button onclick="showCategory('pizza')" data-fr="pizza" data-ar="بيتزا">Pizza</button>
+            <button onclick="showCategory('calzone')" data-fr="calzone" data-ar="كالزون">Calzone</button>
+                <button onclick="showCategory('plats')" data-fr="plas" data-ar="الأطباق">Plats</button>
+      <button onclick="showCategory('salade')" data-fr="salade" data-ar="سلطة">Salade</button>          
+                    <button onclick="showCategory('pakidwich')" data-fr="pakidwich" data-ar="پاكيدويش">Pakidwich</button>
+         <button onclick="showCategory('pasticos')" data-fr="pasticos" data-ar="پاستيكوس">Pasticos</button>
+              <button onclick="showCategory('juic')" data-fr="juic" data-ar="عصير">Juic</button>
+              <button               onclick="showCategory('boissons')" data-fr="Boissons" data-ar="مشروبات">Boissons</button>
+              <button onclick="showCategory('tacos gratiné')" data-fr="tacos gratiné" data-ar=" طاكوس ݣراتيني">Tacos gratiné</button>
+              <button onclick="showCategory('tacos normal')" data-fr="tacos normal" data-ar="طاكوس نورمال">Tacos normal</button>
+              <button onclick="showCategory('tacos special')" data-fr="tacos special" data-ar="طاكوس سبيسيال">Tacos Special</button>
+                   <button onclick="showCategory('suppléments')" data-fr="suppléments" data-ar="المكملات">Suppléments</button>
+                        <button onclick="showCategory('desserts')" data-fr="desserts" data-ar="الحلويات">Desserts</button>
+                                              <button onclick="showCategory('offers')" data-fr="Offers" data-ar="عروض">Offers</button>
+  </div>
+</div>
+
+
+  
+  <!-- Section Burgers -->
+<div class="category" id="Burger">
+  <h2><span class="border-left"></span><span data-fr="BURGER" data-ar="برغر">BURGER</span></h2>
+  <div class="items">
+    <div class="item">
+      <img src="images/BE1.png" alt="Burger">
+      <h3 data-fr="Hamburger" data-ar="هامبرغر">Hamburger</h3>
+      <p class="price" data-price="18">18 DH</p>
+      <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Hamburger', 18, 'images/BE1.png')"></i>
+    </div>
+
+    <div class="item extra hidden">
+      <img src="images/BE2.png" alt="Burger">
+      <h3 data-fr="Cheese Burger" data-ar="برغر بالجبن">Cheese Burger</h3>
+      <p class="price" data-price="20">20 DH</p>
+      <i class="fa fa-plus add-icon" onclick="addToCart('Cheese Burger', 20, 'images/BE2.png')"></i>
+    </div>
+
+    <div class="item extra hidden">
+      <img src="images/BE4.png" alt="Burger">
+      <h3 data-fr="Double Burger" data-ar="برغر دوبل">Double Burger</h3>
+      <p class="price" data-price="30">30 DH</p>
+      <i class="fa fa-plus add-icon" onclick="addToCart('Double  Burger', 30, 'images/BE4.png')"></i>
+    </div>
+
+    <div class="item extra hidden">
+      <img src="images/BE3.png" alt="Burger">
+      <h3 data-fr="Chicken Burger" data-ar="برغر الدجاج">Chicken Burger</h3>
+      <p class="price" data-price="20">20 DH</p>
+      <i class="fa fa-plus add-icon" onclick="addToCart('Chicken Burger', 20, 'images/BE3.png')"></i>
+    </div>
+     
+    <div class="btn-container">
+      <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+    </div>   
+  </div>
+</div>
+
+
+<!-- Section chika -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="chika">
+      <h2><span class="border-left"></span><span data-fr="CHIKA" data-ar="تشيكا">CHIKA</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/C1.png" alt="Végétarien">
+          <h3 data-fr=" Chika viande hachee" data-ar="كفتة تشيكا">Chika viande hachee</h3>
+          <p class="price" data-price="23">22 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('chika viande hachee', 22, 'images/C1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C9.png" alt="Végétarien">
+          <h3 data-fr="Crispy poulet" data-ar="كريسبي دجاج"><Caption>Crispy poulet</Caption></h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Crispy poulet', 22, 'images/C9.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C2.png" alt="Végétarien">
+          <h3 data-fr="Dinde chika" data-ar="دجاج تشيكا">dinde chika</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Dinde Végétarien', 20, 'images/C2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C3.png" alt="Végétarien">
+          <h3 data-fr="Mixte chika" data-ar=" تشيكا ميكست">Mixte chika</h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Mixte Végétarien', 22, 'images/C3.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C4.png" alt="Végétarien">
+          <h3 data-fr="Chicka merguz" data-ar="تشيكا مركاز">Chicka merguz</h3>
+          <p class="price" data-price="25">18 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Chicka merguz', 18, 'images/C4.png')"></i>
+        </div>
+
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+<!-- Pizza Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="pizza">
+      <h2><span class="border-left"></span><span data-fr="PIZZA" data-ar="بيتزا">PIZZA</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "30", "img": "images/pp.jpg"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "55", "img": "images/pi.png"}]'>
+          <img src="images/pp.jpg" alt="Pizza Ino">
+          <h3 data-fr="Pizza Ino" data-ar="بيتزا اينو">Pizza Ino</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+        
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "20", "img": "images/pm.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "30", "img": "images/pm.png"}]'>
+          <img src="images/pm.png" alt="Pizza Margherita">
+          <h3 data-fr="Pizza Margherita" data-ar="بيتزا مارغريتا">Pizza Margherita</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "25", "img": "images/pdd.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "40", "img": "images/pdd.png"}]'>
+          <img src="images/pdd.png" alt="Pizza Dinde">
+          <h3 data-fr="Pizza Dinde" data-ar="بيتزا دجاج">Pizza Dinde</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "25", "img": "images/pmm.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "40", "img": "images/pmm.png"}]'>
+          <img src="images/pmm.png" alt="Pizza Merguez">
+          <h3 data-fr="Pizza Merguez" data-ar="بيتزا مرقاز">Pizza Merguez</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "28", "img": "images/pdk.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "45", "img": "images/pdk.png"}]'>
+          <img src="images/pdk.png" alt="Pizza Kefta de viande">
+          <h3 data-fr="Pizza Kefta de viande" data-ar="بيتزا كفتة اللحم">Pizza Kefta de viande</h3>
+          <p class="price" data-price="28">28 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "28", "img": "images/ps.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "45", "img": "images/ps.png"}]'>
+          <img src="images/ps.png" alt="Pizza Shawarma">
+          <h3 data-fr="Pizza Shawarma" data-ar="بيتزا شاورما">Pizza Shawarma</h3>
+          <p class="price" data-price="28">28 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+          
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "25", "img": "images/pj.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "45", "img": "images/pj.png"}]'>
+          <img src="images/pj.png" alt="Pizza Jambon de dinde">
+          <h3 data-fr="Pizza Jambon de dinde" data-ar="بيتزا جانبون الدجاج">Pizza Jambon de dinde</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "30", "img": "images/pff.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "60", "img": "images/pff.png"}]'>
+          <img src="images/pff.png" alt="Pizza Fruits de mer">
+          <h3 data-fr="Pizza Fruits de mer" data-ar="بيتزا فواكه البحر">Pizza Fruits de mer</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "30", "img": "images/p4.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "60", "img": "images/p4.png"}]'>
+          <img src="images/p4.png" alt="Pizza 4 Saisons">
+          <h3 data-fr="Pizza 4 Saisons" data-ar="بيتزا 4 فصول">Pizza 4 Saisons</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "23", "img": "images/pv.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "38", "img": "images/pv.png"}]'>
+          <img src="images/pv.png" alt="Pizza Végétarienne">
+          <h3 data-fr="Pizza Végétarienne" data-ar="بيتزا نباتية">Pizza Végétarienne</h3>
+          <p class="price" data-price="23">23 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "25", "img": "images/pt.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "40", "img": "images/pt.png"}]'>
+          <img src="images/pt.png" alt="Pizza Thon">
+          <h3 data-fr="Pizza Thon" data-ar="بيتزا طون">Pizza Thon</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "Petite", "label_ar": "صغيرة", "price": "30", "img": "images/pmixte.png"}, {"label_fr": "Grande", "label_ar": "كبيرة", "price": "60", "img": "images/pmixte.png"}]'>
+          <img src="images/pmixte.png" alt="Pizza Mixte">
+          <h3 data-fr="Pizza Mixte" data-ar="بيتزا مشكلة">Pizza Mixte</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+              </div>
+
+        
+<!-- Section Calzones -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="calzone">
+      <h2><span class="border-left"></span><span data-fr="CALZONE" data-ar="كالزون">CALZONE</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/C.png" alt="Calzone">
+          <h3 data-fr="Calzone Dinde" data-ar="كالزون دجاج">Calzone Dinde</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Calzone Dinde', 30, 'images/C.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C0.png" alt="Calzone">
+          <h3 data-fr="Calzone Kefta" data-ar="كالزون كفتة">Calzone Kafta</h3>
+          <p class="price" data-price="33">33 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Calzone Kafta', 33, 'images/C0.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/C0.png" alt="Calzone">
+          <h3 data-fr="Calzone Mixte" data-ar="كالزون ميكست">Calzone Mixte</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Calzone Mixte', 35, 'images/C0.png')"></i>
+        </div>
+
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+
+
+  
+<!-- Pakidwich Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="pakidwich">
+      <h2><span class="border-left"></span><span data-fr="PAKIDWICH" data-ar="باكيدويش">PAKIDWICH</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/PAKI1.png" alt="Pakidwich">
+          <h3 data-fr="PAKIDWICH Poulet" data-ar="باكيدويش دجاج">PAKIDWICH Poulet</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('PAKIDWICH Poulet', 30, 'images/PAKI1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/PAKI2.png" alt="Pakidwich">
+          <h3 data-fr="PAKIDWICH Kefta viande" data-ar="باكيدويش كفتة لحم">PAKIDWICH Kefta viande</h3>
+          <p class="price" data-price="33">33 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('PAKIDWICH Kefta viande', 33, 'images/PAKI2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/PAKI2.png" alt="Pakidwich">
+          <h3 data-fr="PAKIDWICH Mixte" data-ar="باكيدويش ميكست">PAKIDWICH Mixte</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('PAKIDWICH Mixte', 35, 'images/PAKI2.png')"></i>
+        </div>
+
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pasticos Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="pasticos">
+      <h2><span class="border-left"></span><span data-fr="PASTICOS" data-ar="باستيكوس">PASTICOS</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/PASTI1.png" alt="Pasticos">
+          <h3 data-fr="Pasticos Kefta" data-ar="باستيكوس كفتة">Pasticos Kefta</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Pasticos Kefta', 35, 'images/PASTI1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/PASTI2.png" alt="Pasticos">
+          <h3 data-fr="Pasticos Dinde" data-ar="باستيكوس دجاج">Pasticos Dinde</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pasticos Dinde', 35, 'images/PASTI2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/PASTI2.png" alt="Pasticos">
+          <h3 data-fr="Pasticos Mixte" data-ar="باستيكوس ميكست">Pasticos Mixte</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pasticos Mixte', 35, 'images/PASTI2.png')"></i>
+        </div>
+
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pastitsio Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="pastitsio">
+      <h2><span class="border-left"></span><span data-fr="PASTITSIO (Pâtes/Frites)" data-ar="باستيتسيو (معكرونة/بطاطس)">PASTITSIO (Pâtes/Frites)</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/glob1.png" alt="Pastitsio">
+          <h3 data-fr="Pastitsio Jumbo" data-ar="باستيتسيو جامبو">Pastitsio Jumbo</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Pastitsio Jumbo Pâtes/Frites', 20, 'images/glob1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/glob.png" alt="Pastitsio">
+          <h3 data-fr="Pastitsio Dinde" data-ar="باستيتسيو دجاج">Pastitsio Dinde</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pastitsio Dinde', 25, 'images/glob.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/glob.png" alt="Pastitsio">
+          <h3 data-fr="Pastitsio Kefta" data-ar="باستيتسيو كفتة">Pastitsio Kefta</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pastitsio Kefta', 30, 'images/glob.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/glob.png" alt="Pastitsio">
+          <h3 data-fr="Pastitsio Mixte" data-ar="باستيتسيو ميكست">Pastitsio Mixte</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pastitsio Mixte', 30, 'images/glob.png')"></i>
+        </div>
+
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Sandwich items -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="sandwich">
+      <h2><span class="border-left"></span><span data-fr="SANDWICH" data-ar="ساندويتش">SANDWICH</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item">
+          <img src="images/D1.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Saucisse" data-ar="ساندويتش صوصيص">Sandwich Sosis</h3>
+          <p class="price" data-price="13">13 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Sandwich Sosis', 13, 'images/D1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/D2.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Thon" data-ar="ساندويتش طون">Sandwich Thon</h3>
+          <p class="price" data-price="10">10 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Sandwich Thon', 10, 'images/D2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/D3.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Dinde" data-ar="ساندويتش دجاج">Sandwich Dinde</h3>
+          <p class="price" data-price="15">15 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Sandwich Dinde', 15, 'images/D3.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/D4.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Sépia" data-ar="ساندويتش سيبيا">Sandwich Sépia</h3>
+          <p class="price" data-price="15">15 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Sandwich Sépia', 15, 'images/D4.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/D5.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Kefta Viande" data-ar="ساندويتش كفتة لحم">Sandwich Kafta Lahm</h3>
+          <p class="price" data-price="15">15 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Sandwich Kafta Lahm', 15, 'images/D5.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/D6.png" alt="Sandwich">
+          <h3 data-fr="Sandwich Mixte" data-ar="ساندويتش ميكست">Sandwich Mixte</h3>
+          <p class="price" data-price="17">17 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Sandwich Mixte', 17, 'images/D6.png')"></i>
+        </div>
+        
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Panini items -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="panini">
+      <h2><span class="border-left"></span><span data-fr="PANINI" data-ar="بانيني">PANINI</span></h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/U1.png" alt="Panini">
+          <h3 data-fr="Panini Fromage" data-ar="بانيني جبن">Panini Fromage</h3>
+          <p class="price" data-price="10">10 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Panini Fromage', 10, 'images/U1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/U2.png" alt="Panini">
+          <h3 data-fr="Panini Thon" data-ar="بانيني طون">Panini Thon</h3>
+          <p class="price" data-price="13">13 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Panini Thon', 13, 'images/U2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/U2.png" alt="Panini">
+          <h3 data-fr="Panini Dinde" data-ar="بانيني دجاج">Panini Dinde</h3>
+          <p class="price" data-price="17">17 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Panini Dinde', 17, 'images/U2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/U2.png" alt="Panini">
+          <h3 data-fr="Panini Kefta Viande" data-ar="بانيني كفتة لحم">Panini Kafta Lahm</h3>
+          <p class="price" data-price="18">18 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Panini Kafta Lahm', 18, 'images/U2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/U2.png" alt="Panini">
+          <h3 data-fr="Panini Mixte" data-ar="بانيني ميكست">Panini Mixte</h3>
+          <p class="price" data-price="18">18 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Panini Mixte', 18, 'images/U2.png')"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+
+  
+
+<!-- Tacos Gratiné Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="tacos gratiné">
+      <h2><span class="border-left"></span><span data-fr="TACOS GRATINÉ" data-ar="تاكوس غراتان">TACOS GRATINÉ</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos gratiné1.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "33", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné1.png" alt="Tacos Gratiné Sosis">
+          <h3 data-fr="Tacos Gratiné Sosis" data-ar="تاكوس غراتان صوصيص">Tacos Gratiné Sosis</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "33", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Sépia">
+          <h3 data-fr="Tacos Gratiné Sépia" data-ar="تاكوس غراتان سيبيا">Tacos Gratiné Sépia</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "33", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Thon">
+          <h3 data-fr="Tacos Gratiné Thon" data-ar="تاكوس غراتان طون">Tacos Gratiné Thon</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Kefta Dinde">
+          <h3 data-fr="Tacos Gratiné Kefta Dinde" data-ar="تاكوس غراتان كفتة الدجاج">Tacos Gratiné Kefta Dinde</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Dinde">
+          <h3 data-fr="Tacos Gratiné Dinde" data-ar="تاكوس غراتان دجاج">Tacos Gratiné Dinde</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Kefta Bagri">
+          <h3 data-fr="Tacos Gratiné Kefta Bagri" data-ar="تاكوس غراتان كفتة البقر">Tacos Gratiné Kefta Bagri</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "37", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Escalope">
+          <h3 data-fr="Tacos Gratiné Escalope" data-ar="تاكوس غراتان إسكالوب">Tacos Gratiné Escalope</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Chawarma">
+          <h3 data-fr="Tacos Gratiné Chawarma" data-ar="تاكوس غراتان شاورما">Tacos Gratiné Chawarma</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "37", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Cordon Bleu">
+          <h3 data-fr="Tacos Gratiné Cordon Bleu" data-ar="تاكوس غراتان كوردون بلو">Tacos Gratiné Cordon Bleu</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "27", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Mixte">
+          <h3 data-fr="Tacos Gratiné Mixte" data-ar="تاكوس غراتان ميكست">Tacos Gratiné Mixte</h3>
+          <p class="price" data-price="27">27 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "30", "img": "images/tacos gratiné2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "40", "img": "images/tacos gratiné2.png"}]'>
+          <img src="images/tacos gratiné2.png" alt="Tacos Gratiné Fruit de Mer">
+          <h3 data-fr="Tacos Gratiné Fruit de Mer" data-ar="تاكوس غراتان فواكه البحر">Tacos Gratiné Fruit de Mer</h3>
+          <p class="price" data-price="30">30 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+			  </div>
+   <!-- Tacos Normal Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="tacos normal">
+      <h2><span class="border-left"></span><span data-fr="TACOS NORMAL" data-ar="تاكوس عادي">TACOS NORMAL</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "20", "img": "images/tacos normal1.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "30", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "38", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal1.png" alt="Tacos Normal Sosis">
+          <h3 data-fr="Tacos Normal Sosis" data-ar="تاكوس عادي صوصيص">Tacos Normal Sosis</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "20", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "30", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "38", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Sépia">
+          <h3 data-fr="Tacos Normal Sépia" data-ar="تاكوس عادي سيبيا">Tacos Normal Sépia</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "20", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "30", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "38", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Thon">
+          <h3 data-fr="Tacos Normal Thon" data-ar="تاكوس عادي طون">Tacos Normal Thon</h3>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "22", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "32", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Kefta Dinde">
+          <h3 data-fr="Tacos Normal Kefta Dinde" data-ar="تاكوس عادي كفتة دجاج">Tacos Normal Kefta Dinde</h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "22", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "32", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Dinde">
+          <h3 data-fr="Tacos Normal Dinde" data-ar="تاكوس عادي دجاج">Tacos Normal Dinde</h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "22", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "32", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Kefta Bagri">
+          <h3 data-fr="Tacos Normal Kefta Bagri" data-ar="تاكوس عادي كفتة بقر">Tacos Normal Kefta Bagri</h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "22", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "32", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Escalope">
+          <h3 data-fr="Tacos Normal Escalope" data-ar="تاكوس عادي إسكالوب">Tacos Normal Escalope</h3>
+          <p class="price" data-price="22">22 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "23", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "33", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Chawarma">
+          <h3 data-fr="Tacos Normal Chawarma" data-ar="تاكوس عادي شاورما">Tacos Normal Chawarma</h3>
+          <p class="price" data-price="23">23 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "23", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "33", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "40", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Cordon Bleau">
+          <h3 data-fr="Tacos Normal Cordon Bleau" data-ar="تاكوس عادي كوردون بلو">Tacos Normal Cordon Bleau</h3>
+          <p class="price" data-price="23">23 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "45", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Mixte">
+          <h3 data-fr="Tacos Normal Mixte" data-ar="تاكوس عادي ميكست">Tacos Normal Mixte</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item" data-sizes='[{"label_fr": "S", "label_ar": "صغير", "price": "25", "img": "images/tacos normal2.png"}, {"label_fr": "L", "label_ar": "كبير", "price": "35", "img": "images/tacos normal2.png"}, {"label_fr": "XL", "label_ar": "اكسترا كبير", "price": "45", "img": "images/tacos normal2.png"}]'>
+          <img src="images/tacos normal2.png" alt="Tacos Normal Fruit de Mer">
+          <h3 data-fr="Tacos Normal Fruit de Mer" data-ar="تاكوس عادي فواكه البحر">Tacos Normal Fruit de Mer</h3>
+          <p class="price" data-price="25">25 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Découvrir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+ <!-- Tacos Special Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="tacos special">
+      <h2><span class="border-left"></span><span data-fr="TACOS SPECIAL" data-ar="طاكوس سبيسيال">TACOS SPECIAL</span></h2>
+      <div class="items">
+
+   <div class="item">
+          <img src="images/pizza1.png" alt="Tacos Luffy">
+          <h3 data-fr="Tacos Luffy" data-ar="تاكوس لوفي">Tacos Luffy</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item">
+          <img src="images/pizza0.png" alt="Tacos Zinger">
+          <h3 data-fr="Tacos Zinger" data-ar="تاكوس زينجر">Tacos Zinger</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item">
+          <img src="images/pizza0.png" alt="Tacos Zoro">
+          <h3 data-fr="Tacos Zoro" data-ar="تاكوس زورو">Tacos Zoro</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+        <div class="item">
+          <img src="images/pizza0.png" alt="Tacos Crunchy">
+          <h3 data-fr="Tacos Crunchy" data-ar="تاكوس كرانشي">Tacos Crunchy</h3>
+          <p class="price" data-price="35">35 DH</p>
+          <i class="fa fa-shopping-cart add-icon"></i>
+        </div>
+
+     
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+  
+  
+  
+ <!-- Drinks Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="juices">
+      <h2><span class="border-left"></span><span data-fr="JUS" data-ar="عصائر">JUS</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item">
+          <img src="images/J0.png" alt="Jus">
+          <h3 data-fr="Jus d'orange" data-ar="عصير البرتقال">Jus d'orange</h3>
+          <p class="price" data-price="8">8 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Jus d\'orange', 8, 'images/J0.png')"></i>
+        </div>
+
+        <!-- Hidden items -->
+        <div class="item extra hidden">
+          <img src="images/JPO.png" alt="Jus">
+          <h3 data-fr="Jus de pomme" data-ar="عصير التفاح">Jus de pomme</h3>
+          <p class="price" data-price="8">8 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Jus de pomme', 8, 'images/juices.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/JB.png" alt="Jus">
+          <h3 data-fr="Jus de banane" data-ar="عصير الموز">Jus de banane</h3>
+          <p class="price" data-price="8">8 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Jus de banane', 8, 'images/juices.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/JA.png" alt="Jus">
+          <h3 data-fr="Jus d'avocat" data-ar="عصير الأفوكادو">Jus d'avocat</h3>
+          <p class="price" data-price="10">10 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Jus d\'avocat', 10, 'images/juices.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/JPA.png" alt="Jus">
+          <h3 data-fr="Jus panaché" data-ar="عصير پناشي">Jus panaché</h3>
+          <p class="price" data-price="10">10 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Jus panaché', 10, 'images/juices.png')"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="drinks">
+      <h2><span class="border-left"></span><span data-fr="SUPPLÉMENTS" data-ar="إضافات">SUPPLÉMENTS</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item">
+          <img src="images/X.jpg" alt="">
+          <h3 data-fr="Nuggets" data-ar="ناجتس">Nuggets</h3>
+          <p class="price" data-price="10">9 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Nuggets', 9, 'images/X.jpg')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/X1.png" alt="Boissons">
+          <h3 data-fr="Tranches de fromage" data-ar="شرائح الجبن">Tranches de fromage</h3>
+          <p class="price" data-price="2">2 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Tranches de fromage', 2, 'images/X1.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/X2.png" alt="Boissons">
+          <h3 data-fr="Sauce" data-ar="صلصة">sauce</h3>
+          <p class="price" data-price="2">2 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('sauce', 2, 'images/X2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/X3.png" alt="Boissons">
+          <h3 data-fr="Mozzarella" data-ar="موزاريلا">Mozzarella</h3>
+          <p class="price" data-price="5">5 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Mozzarella', 5, 'images/X3.png')"></i>
+        </div>
+        
+        <div class="item extra hidden">
+          <img src="images/X4.png" alt="Boissons">
+          <h3 data-fr="Frites" data-ar="بطاطس مقلية">Frites</h3>
+          <p class="price" data-price="5">5 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Frites', 5, 'images/X4.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/X5.png" alt="Boissons">
+          <h3 data-fr="Escalope" data-ar="إسكالوب">Escalope</h3>
+          <p class="price" data-price="7">7 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Escalope', 7, 'images/X5.png')"></i>
+        </div>
+        
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Voir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	</div>
+ <!-- Drinks (Equipe) Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="suppléments">
+      <h2><span class="border-left"></span><span data-fr="BOISSONS" data-ar="المشروبات">BOISSONS</span></h2>
+      <div class="items">
+        <!-- First visible item -->
+        <div class="item">
+          <img src="images/W1.png" alt="Boissons">
+          <h3 data-fr="Canette 33 cl" data-ar="علبة 33 سنتي">Canette 33 cl</h3>
+          <p class="price" data-price="6">6 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Canette 33 cl', 6, 'images/W1.png')"></i>
+        </div>
+
+        <!-- Hidden items -->
+        <div class="item extra hidden">
+          <img src="images/W2.png" alt="Boissons">
+          <h3 data-fr="Eau 33 cl" data-ar="ماء 33 سنتي">Eau 33 cl</h3>
+          <p class="price" data-price="3">3 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Eau 33 cl', 3, 'images/W2.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/sting.png" alt="Boissons">
+          <h3 data-fr="Boisson énergie" data-ar="مشروب طاقة">Boisson énergie</h3>
+          <p class="price" data-price="8">8 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Boisson énergie', 8, 'images/sting.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/W4.png" alt="Boissons">
+          <h3 data-fr="Canette 25 cl" data-ar="علبة 25 سنتي">Canette 25 cl</h3>
+          <p class="price" data-price="5">5 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Canette 25 cl', 5, 'images/W4.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/W5.png" alt="Boissons">
+          <h3 data-fr="Litre d'eau" data-ar="لتر ماء">Litre d'eau</h3>
+          <p class="price" data-price="7">7 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Litre d\'eau', 7, 'images/W5.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/W6.png" alt="Boissons">
+          <h3 data-fr="Litre Monada" data-ar="لتر منادة">Litre Monada</h3>
+          <p class="price" data-price="8">8 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Litre Monada', 8, 'images/W6.png')"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Découvrir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desserts Section -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="desserts">
+      <h2><span class="border-left"></span><span data-fr="DESSERTS" data-ar="الحلويات">DESSERTS</span></h2>
+      <div class="items">
+       
+
+        <!-- Hidden items -->
+        <div class="item extra hidden">
+          <img src="images/L3.png" alt="Desserts">
+          <h3 data-fr="Tiramisu" data-ar="تيراميسو">Tiramisu</h3>
+          <p class="price" data-price="15">15 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Tiramisu', 15, 'images/L3.png')"></i>
+        </div>
+
+        <!-- Discover more button -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Découvrir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Section Tacos Ino -->
+<div id="categories">
+  <div class="menu-section" id="menu-section">
+    <div class="category" id="offers">
+      <h2><span class="border-left"></span><span data-fr="OFFRES" data-ar="العروض">OFFERS</span></h2>
+      <div class="items">
+        
+       
+
+        <!-- Menus Enfants -->
+        <div class="item extra hidden">
+          <img src="images/I4.png" alt="Menu enfant">
+          <h3 data-fr="Tacos enfant" data-ar="تاكوس للأطفال">Tacos enfant</h3>
+          <div class="description-toggle">
+            <i class="fa fa-chevron-down toggle-arrow"></i>
+            <div class="description-box">
+              <h4 data-fr="Tacos petite + canette" 
+                  data-ar="تاكوس صغير + علبة">
+                Tacos petite + canette
+              </h4>
+            </div>
+          </div>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-shopping-cart add-icon" onclick="addToCart('Menu enfant', 20, 'images/I4.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/I5.png" alt="Burger enfant">
+          <h3 data-fr="Burger enfant" data-ar="برغر للأطفال">Burger enfant</h3>
+          <div class="description-toggle">
+            <i class="fa fa-chevron-down toggle-arrow"></i>
+            <div class="description-box">
+              <h4 data-fr="Hamburger + canette" 
+                  data-ar="هامبرغر + علبة">
+                Hamburger + canette
+              </h4>
+            </div>
+          </div>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Burger enfant', 20, 'images/I5.png')"></i>
+        </div>
+
+        <div class="item extra hidden">
+          <img src="images/I6.png" alt="Pizza enfant">
+          <h3 data-fr="Pizza enfant" data-ar="بيتزا للأطفال">Pizza enfant</h3>
+          <div class="description-toggle">
+            <i class="fa fa-chevron-down toggle-arrow"></i>
+            <div class="description-box">
+              <h4 data-fr="Petite pizza margherita + juic héro" 
+                  data-ar="بيتزا صغيرة مارغريتا + عصير الأبطال">
+                Petite pizza margherita + juic hero
+              </h4>
+            </div>
+          </div>
+          <p class="price" data-price="20">20 DH</p>
+          <i class="fa fa-plus add-icon" onclick="addToCart('Pizza enfant', 20, 'images/I6.png')"></i>
+        </div>
+
+        <!-- Bouton Voir plus -->
+        <div class="btn-container">
+          <button class="show-more-btn" data-fr="Découvrir plus" data-ar="اكتشف المزيد" onclick="toggleItems(this)">اكتشف المزيد</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+<!-- أيقونة الإغلاق داخل cart-page -->
+<div class="cart-page" id="cart-page">
+
+  <div class="cart-header">
+    <span class="close-cart" onclick="closeCart()">
+      <i class="fa fa-times"></i>
+    </span>
+    <div class="cart-header-title">
+      <i class="fa fa-bag-shopping"></i>
+      <h3 data-fr="Votre demande" data-ar="طلباتك">Votre demande</h3>
+    </div>
+    <span class="cart-header-spacer"></span>
+  </div>
+
+  <p class="cart-tagline"
+     data-fr="Vérifiez votre commande avant de continuer"
+     data-ar="تأكد من طلبك قبل ما تكمل، وجودة تخدمك">
+    تأكد من طلبك قبل ما تكمل، وجودة تخدمك ✨
+  </p>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-summary-card" id="cart-summary-wrap">
+    <div class="cart-summary-row">
+      <span data-fr="Sous-total" data-ar="المجموع">المجموع</span>
+      <span id="cart-page-total">0 DH</span>
+    </div>
+    <div class="cart-summary-note" data-fr="Frais de livraison calculés à l'étape suivante" data-ar="مصاريف التوصيل كتتحسب فالمرحلة الجاية">
+      مصاريف التوصيل كتتحسب فالمرحلة الجاية
+    </div>
+  </div>
+
+  <!-- زر اطلب الآن -->
+  <button class="order-button" id="order-button" onclick="showOrderOptions()" data-fr="Commander" data-ar=" أطلب الأن">
+    <i class="fa fa-check"></i> Commander now
+  </button>
+</div>
+
+
+  <div class="order-options" id="order-options">
+    <div class="step-badge">
+      <span class="step-badge-num">1</span>
+      <span data-fr="Étape 1 sur 3" data-ar="الخطوة 1 من 3">الخطوة 1 من 3</span>
+    </div>
+
+    <h1 data-fr="Choisissez votre option de commande" data-ar="كيفاش بغيتي تطلب؟">
+      كيفاش بغيتي تطلب؟
+    </h1>
+    <p class="step-subtitle" data-fr="Choisissez l'option qui vous convient le mieux" data-ar="اختار الطريقة الأنسب ليك، وحنا نتكلفو بالباقي">
+      اختار الطريقة الأنسب ليك، وحنا نتكلفو بالباقي 👌
+    </p>
+
+    <div class="option-cards">
+      <button class="option-card" onclick="selectOption('local')">
+        <i class="fa fa-store"></i>
+        <span class="option-card-title" data-fr="Sur place" data-ar="طلب فالمطعم">طلب فالمطعم</span>
+        <span class="option-card-desc" data-fr="Récupérez votre commande directement" data-ar="جي وسجل طلبك مباشرة فالمحل">جي وسجل طلبك مباشرة فالمحل</span>
+      </button>
+      <button class="option-card" onclick="selectOption('delivery')">
+        <i class="fa fa-motorcycle"></i>
+        <span class="option-card-title" data-fr="Livraison" data-ar="التوصيل للدار">التوصيل للدار</span>
+        <span class="option-card-desc" data-fr="On vous livre où que vous soyez" data-ar="نوصلوها ليك فبابك بسرعة">نوصلوها ليك فبابك بسرعة</span>
+      </button>
+    </div>
+
+    <!-- الصورة المربعة -->
+    <div class="image-box">
+      <img src="images/Ws.png" alt="Food">
+    </div>
+  </div>
+
+  <!-- اختيار فرع المطعم -->
+  <div class="restaurant-select" id="restaurant-select">
+    <div class="step-badge">
+      <span class="step-badge-num">2</span>
+      <span data-fr="Étape 2 sur 3" data-ar="الخطوة 2 من 3">الخطوة 2 من 3</span>
+    </div>
+
+    <h1 data-fr="Choisissez votre restaurant" data-ar="اختار الفرع اللي قريب ليك">
+      اختار الفرع اللي قريب ليك
+    </h1>
+    <p class="step-subtitle" data-fr="Nous préparons votre commande fraîche dans ce restaurant" data-ar="غادي نحضرو طلبك طري ديما فهاد الفرع">
+      غادي نحضرو طلبك طري ديما فهاد الفرع 🔥
+    </p>
+
+    <div class="restaurant-cards">
+      <button class="restaurant-card" onclick="chooseRestaurant('حي الشهداء')" data-fr="Chouhada" data-ar="مطعم حي الشهداء">
+        <i class="fa fa-store"></i>
+        <span data-fr="Restaurant Chouhada" data-ar="مطعم حي الشهداء">مطعم حي الشهداء</span>
+        <small data-fr="Ouvert maintenant" data-ar="حي الشهداء، أيت ملول">حي الشهداء، أيت ملول</small>
+      </button>
+      <button class="restaurant-card" onclick="chooseRestaurant('حي تمازرت')" data-fr="Tamazart" data-ar="مطعم حي تمازرت">
+        <i class="fa fa-store"></i>
+        <span data-fr="Restaurant Tamazart" data-ar="مطعم حي تمازرت">مطعم حي تمازرت</span>
+        <small data-fr="Ouvert maintenant" data-ar="حي تمازرت، أيت ملول">حي تمازرت، أيت ملول</small>
+      </button>
+    </div>
+  </div>
+
+<!-- الخريطة -->
+<div id="map-container" style="display: none;">
+    <div class="step-badge">
+      <span class="step-badge-num">3</span>
+      <span data-fr="Étape 3 sur 3" data-ar="الخطوة 3 من 3">الخطوة 3 من 3</span>
+    </div>
+
+    <h1 data-fr="Sélectionnez votre position" data-ar="حدد موقعك على الخريطة">
+      حدد موقعك على الخريطة
+    </h1>
+    <p class="step-subtitle" data-fr="Touchez la carte à l'endroit où vous vous trouvez" data-ar="ضغطة وحدة على البقعة اللي كاين فيها وحنا نجيوك">
+      ضغطة وحدة على البقعة اللي كاين فيها وحنا نجيوك 📍
+    </p>
+
+  <div class="map-square-wrap">
+    <div id="map"></div>
+  </div>
+
+<button id="send-order-button" onclick="sendWhatsAppOrder()" 
+        style="display:none;" 
+        data-fr="Envoyer la commande via WhatsApp" 
+        data-ar="📤 إرسال الطلب">
+  <i class="fab fa-whatsapp"></i> Envoyer via WhatsApp
+</button>
+   <div class="image-box2">
+      <img src="images/Fu2.png" alt="Food">
+    </div>
+</div>
+  
+<!-- Modal -->
+<div id="itemModal" class="modal">
+  <div class="modal-content">
+    <span class="close"style="color:orange;">&times;</span>
+    <img id="modalImage" src="" alt="Item Image">
+    <h3 id="modalTitle"style="color:orange; font-weight :bold;"></h3>
+
+    <!-- 🆕 اختيار الحجم (يظهر فقط للمنتجات اللي فيها أحجام متعددة) -->
+    <div id="modalSizes" class="modal-sizes" style="display:none;">
+      <p class="modal-sizes-label" data-fr="Choisissez la taille" data-ar="اختار الحجم">اختار الحجم</p>
+      <div class="modal-sizes-circles" id="modalSizesCircles"></div>
+    </div>
+
+    <p id="modalPrice" style="color:white; font-weight :bold;"></p>
+    <button id="modalAddToCart" 
+          data-ar="أضـف إلى السلة" 
+          data-fr="Ajouter au panier">Ajouter au panier
+    <i class="fa fa-shopping-cart"></i> </button>
+  </div>
+</div>
+  
+  
+   
+
+                    
+                    
+         
+    
+      <!-- Footer Start -->
+      
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+   
+                        <div class="instagram-feed-area d-flex flex-wrap">
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F6.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="images/F6.jpg" class="img-zoom" title="TACOS INO">+</a>
+        </div>
+
+
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F7.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="images/F7.jpg" class="img-zoom" title="TACOS INO">+</a>
+        </div>
+
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F3.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="images/F3.jpg" class="img-zoom" title="TACOS INO">+</a>
+        </div>
+
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F4.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="images/F4.jpg" class="img-zoom" title="TACOS INO'">+</a>
+        </div>
+
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F5.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="imqges/F5.jpg" class="img-zoom" title="TACOS INO">+</a>
+        </div>
+
+        <!-- Single Instagram -->
+        <div class="single-instagram">
+            <img src="images/F8.jpg" alt="">
+            <!-- Image Zoom -->
+            <a href="images/F8.jpg" class="img-zoom" title="TACOS INO">+</a>
+        </div>
+
+    </div>
+    
+    
+   
+                    
+                      
+                        
+    <h4 style="color: orange; font-size:35px" data-fr="Contactez-nous" data-ar="اتصل بنا">Contact us</h4>
+    <p class="mb-2" style="color: white;">
+        <i class="fa fa-map-marker-alt me-3"></i>
+        <span data-fr="Chouhada aït melloul" data-ar="شهداء آيت ملول">Chouhada aït melloul</span>
+    </p>
+    <p class="mb-2" style="color: white;">
+        <i class="fa fa-phone-alt me-3"></i>
+        <span data-fr="+212 687-902690" data-ar="+212 687-902690">+212 687-902690</span>
+    </p>
+    <p class="mb-2" style="color: white;">
+        <i class="fa fa-envelope me-3"></i>
+        <span data-fr="tacosino@gmail.com" data-ar="tacosino@gmail.com">tacosino@gmail.com</span>
+    </p>
+</div>
+<div class="col-lg-3 col-md-6">
+    <h4 style="color: orange; font-size:35px" data-fr="Horaires d'ouverture" data-ar="ساعات العمل">Opening</h4>
+    <h5 class="text-light fw-normal" data-fr="Lundi-mardi-samedi-dimanche" data-ar="الإثنين-الثلاثاء-السبت-الأحد">Monday-tuesday-saturday-sunday</h5>
+    <p style="color: orange;" data-fr="12:00 - 18:00" data-ar="12:00 - 18:00">12:00AM - 6:00PM</p>
+    <h5 class="text-light fw-normal" data-fr="Mercredi-jeudi-vendredi" data-ar="الأربعاء-الخميس-الجمعة">Wednesday-thursday-friday</h5>
+    <p style="color: orange;" data-fr="12:00 - 02:00" data-ar="12:00 - 02:00">12:00AM - 2:00PM</p>
+</div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Snack tacos ino</a>, All Right Reserved. 
+							
+							Designed By <a class="border-bottom" href="https://wa.me/19403866910">yassine_zerouata</a><br><br>
+ 
+                        </div>
+                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Swiper JS -->
+
+
+
+<!-- ملف الصوت -->
+<audio id="clickSound" preload="auto">
+  <source src="cash.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- 🆕 زر الخدمات العائم -->
+<div id="servicesFab" class="services-fab" onclick="toggleServicesPanel()">
+  <i class="fa-solid fa-award"></i>
+</div>
+
+<!-- 🆕 لوحة الخدمات الإبداعية -->
+<div id="servicesOverlay" class="services-overlay" onclick="toggleServicesPanel()"></div>
+<div id="servicesPanel" class="services-panel">
+  <div class="services-panel-header">
+    <h4 data-fr="Pourquoi Tacos Ino ?" data-ar="علاش تاكوس اينو؟">Pourquoi Tacos Ino ?</h4>
+    <i class="fa fa-times services-panel-close" onclick="toggleServicesPanel()"></i>
+  </div>
+  <div class="services-panel-grid">
+
+    <div class="service-card">
+      <div class="service-card-img"><img src="images/V10.png" alt=""></div>
+      <div class="service-card-text">
+        <span class="service-tag" data-fr="Livraison rapide" data-ar="توصيل سريع">Livraison rapide</span>
+        <span class="service-title" data-fr="Livraison rapide et garantie" data-ar="توصيل سريع ومضمون">توصيل سريع ومضمون</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-img"><img src="images/R1.png" alt=""></div>
+      <div class="service-card-text">
+        <span class="service-tag" data-fr="Équipe Tacos Ino" data-ar="فريق تاكوس اينو">Équipe Tacos Ino</span>
+        <span class="service-title" data-fr="Équipe professionnelle et créative" data-ar="فريق محترف ومبدع">فريق محترف ومبدع</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-img"><img src="images/V12.png" alt=""></div>
+      <div class="service-card-text">
+        <span class="service-tag" data-fr="Qualité" data-ar="جودة">Qualité</span>
+        <span class="service-title" data-fr="Qualité fraîche et délicieuse" data-ar="جودة طازجة ولذيذة">جودة طازجة ولذيذة</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-card-img"><img src="images/R2.png" alt=""></div>
+      <div class="service-card-text">
+        <span class="service-tag" data-fr="Prix abordable" data-ar="أسعار معقولة">Prix abordable</span>
+        <span class="service-title" data-fr="Prix abordables pour tous" data-ar="أسعار مناسبة للجميع">أسعار مناسبة للجميع</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+// نجيب جميع العناصر اللي عندها class "item"
+const items = document.querySelectorAll('.item');
+
+// نضيف لكل واحد event عند الضغط
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.add('show-circle'); // تضيف class "show-circle" مرة وحدة
+  });
+});
+</script>
+			
+<script>
+	function closeCart() {
+  document.getElementById("cart-page").style.display = "none";
+  document.getElementById("order-options").style.display = "none";
+  document.getElementById("restaurant-select").style.display = "none";
+  document.getElementById("map-container").style.display = "none";
+
+  // نرجع زر "Commander now" يبان من جديد
+  document.getElementById("order-button").style.display = "flex";
+	}
+</script>
+<script>
+    // فتح المودال عند الضغط على item
+document.querySelectorAll('.item').forEach(item => {
+  item.addEventListener('click', function() {
+    const h3el = this.querySelector('h3');
+    const isArabic = h3el.textContent.trim() === h3el.getAttribute('data-ar');
+
+    let img = this.querySelector('img').src;
+    let title = h3el.innerText;
+
+    document.getElementById('modalImage').src = img;
+    document.getElementById('modalTitle').innerText = title;
+
+    const sizesRaw = this.getAttribute('data-sizes');
+    const sizesWrap = document.getElementById('modalSizes');
+    const circlesWrap = document.getElementById('modalSizesCircles');
+    const addBtn = document.getElementById('modalAddToCart');
+
+    if (sizesRaw) {
+      // 🆕 منتج بأحجام متعددة: نبنيو دوائر الاختيار
+      const sizes = JSON.parse(sizesRaw);
+      circlesWrap.innerHTML = "";
+      sizesWrap.style.display = "block";
+
+      function selectSize(idx) {
+        const s = sizes[idx];
+        document.getElementById('modalImage').src = s.img;
+        document.getElementById('modalPrice').innerText = s.price + " DH";
+        circlesWrap.querySelectorAll('.size-circle').forEach((c, i) => {
+          c.classList.toggle('active', i === idx);
+        });
+        addBtn.onclick = () => addToCart(
+          title + " (" + (isArabic ? s.label_ar : s.label_fr) + ")",
+          s.price,
+          s.img
+        );
+      }
+
+      sizes.forEach((s, idx) => {
+        const circle = document.createElement('button');
+        circle.type = "button";
+        circle.className = "size-circle" + (idx === 0 ? " active" : "");
+        circle.textContent = isArabic ? s.label_ar : s.label_fr;
+        circle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          selectSize(idx);
+        });
+        circlesWrap.appendChild(circle);
+      });
+
+      // الحجم الأول (S) مفعل بالضبط دائماً كبداية
+      selectSize(0);
+
+    } else {
+      // منتج بحجم وحيد (السلوك الأصلي)
+      sizesWrap.style.display = "none";
+      let price = this.querySelector('.price').innerText;
+      let priceValue = this.querySelector('.price').getAttribute('data-price');
+      document.getElementById('modalPrice').innerText = price;
+      addBtn.onclick = () => addToCart(title, priceValue, img);
+    }
+
+    document.getElementById('itemModal').style.display = "flex";
+  });
+});
+
+// إغلاق المودال
+document.querySelector('.close').onclick = () => {
+  document.getElementById('itemModal').style.display = "none";
+};
+window.onclick = function(e) {
+  if (e.target == document.getElementById('itemModal')) {
+    document.getElementById('itemModal').style.display = "none";
+  }
+};
+</script>
+<script>  
+document.addEventListener("DOMContentLoaded", function() {  
+  // --- السلايدر الكبير ---  
+  const bigSlides = document.querySelector(".slides");  
+  const bigImages = document.querySelectorAll(".slides img");  
+  const controls = document.querySelectorAll(".control"); // حدد أزرارك بالclass "control"
+  let bigIndex = 0;  
+
+  // 🆕 تحديث الرقم الفعال (active) باش يتبدل مع كل صورة
+  function updateControls() {
+    controls.forEach((ctrl, i) => {
+      ctrl.classList.toggle("active", i === bigIndex);
+    });
+  }
+
+  function showBigSlide() {  
+    bigSlides.style.transition = "transform 1s ease-in-out";  
+    bigSlides.style.transform = `translateX(-${bigIndex * 100}%)`;  
+    updateControls(); // 🆕 كل ما تتبدل الصورة كيتبدل معها الرقم active
+  }  
+
+  updateControls(); // 🆕 الحالة الابتدائية (رقم 1 active)
+
+  setInterval(() => {
+    bigIndex = (bigIndex + 1) % bigImages.length;
+    showBigSlide();
+  }, 10000); // كل 10 ثواني تبديل  
+  
+  // --- السلايدر الصغير: ثابت بلا حركة، صورتين فقط ---  
+  // (تم إلغاء التحريك بطلب من صاحب الموقع)
+
+  // --- التحكم بالسلايدر الكبير عن طريق الأزرار ---
+  controls.forEach(ctrl => {
+    ctrl.addEventListener("click", () => {
+      bigIndex = parseInt(ctrl.dataset.index); // نجيب الرقم من data-index
+      showBigSlide();
+    });
+  });
+});
+</script>
+
+  <script>
+  // اختيار عناصر الـ dropdown
+  const dropbtn = document.querySelector('.dropbtn');
+  const dropdown = document.querySelector('.dropdown');
+
+  // فتح / غلق الـ dropdown عند الضغط على الزر
+  dropbtn.addEventListener('click', () => {
+    dropdown.classList.toggle('show');
+  });
+
+  // غلق الـ dropdown إذا ضغط المستخدم خارجها
+  window.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+
+  // دالة لتغيير اللغة
+  function switchLang(lang) {
+    alert("Language switched to: " + lang);
+  }
+  </script>
+  <script>
+document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+  arrow.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const box = arrow.nextElementSibling;
+
+    // اخفاء جميع البوكسات الأخرى
+    document.querySelectorAll('.description-box').forEach(b => {
+      if(b !== box) b.classList.remove('show');
+    });
+
+    box.classList.toggle('show');
+  });
+});
+
+// الضغط في أي مكان آخر يخفي جميع الـ boxes
+document.addEventListener('click', () => {
+  document.querySelectorAll('.description-box').forEach(box => box.classList.remove('show'));
+});
+  </script>
+			<script>
+  const button = document.getElementById('modalAddToCart');
+  const sound = document.getElementById('clickSound');
+
+  button.addEventListener('click', () => {
+    // إعادة تعيين الوقت للصوت من البداية قبل التشغيل
+    sound.currentTime = 0;
+    sound.play().catch(err => console.log("Autoplay prevented:", err));
+  });
+			</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- izkdldde js -->
+    <script src="js/active.js"></script>
+    
+</body>
+</html>
+    
